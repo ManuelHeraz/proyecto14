@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Muchas Gracias :3</title>
+</head>
+<script>
+    // Establece la fecha desde la que quieres contar
+    var fecha = new Date("2013-12-13");
+    
+    // Actualiza el contador cada segundo
+    var contador = setInterval(function() {
+    
+      // Obtiene la fecha y hora actual
+      var ahora = new Date().getTime();
+    
+      // Calcula la diferencia entre las fechas
+      var diferencia = ahora - fecha;
+    
+      // Convierte la diferencia a días, horas, minutos y segundos
+      var dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+      var horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+      var segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+    
+      // Muestra el resultado en un elemento con id="contador"
+      document.getElementById("contador").innerHTML = dias + " días " + horas + " horas "
+      + minutos + " minutos " + segundos + " segundos ";
+    
+      // Si la diferencia es negativa, detiene el contador y muestra un mensaje
+      if (diferencia < 0) {
+        clearInterval(contador);
+        document.getElementById("contador").innerHTML = "¡Feliz aniversario!";
+      }
+    }, 1000);
+    </script>
+    </head>
+    <body>
+<body>
+
+    <div class="main-image">
+        <div class="container">
+            <h1><span><p id="contador"></p></span></h1>
+            <span class="cen"> </span>
+            <a href="#fotos" class="button"> lo mejor de nosotros</a>
+        </div>
+    </div>
+
+    <div class="grid-wrapper">
+        <p>Quiero decirte lo mucho que te agradezco por todo lo que has hecho por mí. 
+            Gracias a ti he crecido como persona, he logrado mis metas académicas y profesionales, y he aprendido a amar de verdad.
+            Eres la mejor cosa que me ha pasado en la vida, y te amo con todo mi corazón.
+            <br>
+            <br>
+            <br>
+            Sé que no todo ha sido perfecto en nuestra relación, y que hay cosas que lamento haber hecho o no haber hecho.
+            Una de ellas es no haber tomado más fotos de nuestros mejores momentos, esos que quedan grabados en nuestra memoria y en nuestro corazón.
+            Pero no te preocupes, porque eso es algo que he querido cambiar, y por eso he creado esta página web, donde te muestro lo mejor de nosotros,
+            nuestras principales fotografías, que reflejan nuestro amor, nuestra felicidad, y nuestra complicidad.
+            <br>
+            <br>
+            <br>
+            Espero que te guste este detalle, y que sepas que siempre estaré a tu lado, apoyándote, cuidándote, y queriéndote. 
+            Eres mi razón de ser, y quiero que sigamos creciendo juntos, como pareja y como individuos. 
+            Te adoro, mi vida, y te deseo un feliz 14 de febrero.
+        
+        </p>
+    </div>
+
+    <div class="grid-wrapper" id="fotos">
+
+        <div>
+            <img src="assets/Img1 (1).png" alt="">
+        </div>
+
+        <div>
+            <img src="assets/Img1 (10).png" alt="">
+        </div>
+
+        <div>
+            <img src="assets/Img1 (11).png" alt="">
+        </div>
+
+        <div>
+            <img src="assets/Img1 (12).png" alt="">
+        </div>
+
+        <div>
+            <img src="assets/Img1 (13).png" alt="">
+        </div>
+
+        <div>
+            <img src="assets/Img1 (14).png" alt="">
+        </div>
+
+        <div>
+            <img src="assets/Img1 (15).png" alt="">
+        </div>
+
+        <div>
+            <img src="assets/Img1 (16).png" alt="">
+        </div>
+
+        <div>
+            <img src="assets/Img1 (17).png" alt="">
+        </div>
+
+        <div>
+            <img src="assets/Img1 (18).png" alt="">
+        </div>
+
+        <div>
+            <img src="assets/Img1 (2).jpg" alt="">
+        </div>
+
+        <div>
+            <img src="assets/Img1 (3) xd.png" alt="">
+        </div>
+
+
+        <div>
+            <img src="assets/Img1 (3).jpg" alt="">
+        </div>
+
+        <div>
+            <img src="assets/Img1 (4) xd.png" alt="">
+        </div>
+
+        <div>
+            <img src="assets/Img1 (4).jpg" alt="">
+        </div>
+
+        <div>
+            <img src="assets/Img1 (5) dx.png" alt="">
+        </div>
+
+        <div>
+            <img src="assets/Img1 (5).jpg" alt="">
+        </div>
+
+        <div>
+            <img src="assets/Img1 (6) dx.png" alt="">
+        </div>
+
+        <div>
+            <img src="assets/Img1 (6).jpg" alt="">
+        </div>
+
+        <div>
+            <img src="assets/Img1 (7) dx.png" alt="">
+        </div>
+
+        <div>
+            <img src="assets/Img1 (6) dx.png" alt="">
+        </div>
+
+        <div>
+            <img src="assets/Img1 (7).jpg" alt="">
+        </div>
+
+
+        <div>
+            <img src="assets/Img1 (9).png" alt="">
+        </div>
+
+        <div>
+            <img src="assets/Img1 (8).png" alt="">
+        </div>
+
+        <div>
+            <img src="assets/Img1.jpg" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>
